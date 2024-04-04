@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 600px;
+    background-color: #98cea6;
+    background-size: 100% 40%;
+    background-repeat: no-repeat;
+}
+
+#info,
+#headline {
+    text-align: center;
+    padding: 10px;
+    max-width: 90%;
+}
+
+#headline {
+    font: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+#tip_cal {
+    background-color: rgba(238, 91, 91, 0.243);
+    padding: 50px;
+    border-radius: 10px;
+    max-width: 500px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    background-color: red;
+    background-image: linear-gradient(rgb(251, 253, 253), rgb(255, 255, 255), rgb(253, 253, 252), rgb(187, 240, 241), rgb(195, 195, 241), rgb(212, 215, 238), violet);
+}
+
+.form-label {
+    font: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    font-size: 1.2rem;
+}
+
+.form-input {
+    border: 3px solid black;
+    border-radius: 5px;
+    width: 95%;
+    font-size: bold;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    #tip_cal {
+        padding: 20px;
+    }
+
+    form {
+        grid-template-columns: 1fr;
+    }
+}
